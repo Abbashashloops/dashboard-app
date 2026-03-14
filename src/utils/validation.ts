@@ -9,6 +9,7 @@ export function isValidEmail(value: string): boolean {
   return EMAIL_REGEX.test(value.trim());
 }
 
+
 export function required(value: string | undefined): boolean {
   return typeof value === "string" && value.trim().length > 0;
 }
